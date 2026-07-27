@@ -1,0 +1,160 @@
+nav.navBar {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex: 0 0 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+button.homeButton {
+    border: 2px 0px solid black;
+    padding: 0px;
+    cursor: pointer;
+    flex: 2;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(211, 211, 211);
+    background-color: darkred;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+button.homeButton:hover {
+    color: white;
+    background-color: maroon;
+}
+
+button.navButton {
+    border: 1px solid black;
+    padding: 0px;
+    cursor: pointer;
+    flex: 1;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(194, 194, 194);
+    background-color: darkred;
+    font-size: large;
+    text-align: center;
+}
+button.navButton:hover {
+    color: white;
+    background-color: maroon;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.left,
+div.right {
+    flex: 1 1 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+div.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+
+div.left header {
+    color: rgb(30, 30, 30);
+    font-size: 60px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    border: 4px solid maroon;
+    width: fit-content;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+div.left p a.link {
+    color: maroon;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+div.left p a.sep {
+    color: black;
+    font-weight: bolder; 
+    font-size: 110%;
+}
+
+div.left p a.linkBig {
+    color: maroon;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+div.left p a.sepBig {
+    color: black;
+    font-weight: bolder; 
+    font-size: 140%;
+}
+
+div.left img {
+    border: 2px solid black;
+    width: 70%;
+    display: block;
+    margin-top: 0px;
+}
+
+div.right {
+    margin-top: 40px;
+    padding: 0px;
+    box-sizing: border-box; 
+    margin-right: 200px;
+    margin-left: 80px;
+}
+
+div.right header {
+    color: rgb(30, 30, 30);
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+div.right p {
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+div.right p a.link {
+    color: maroon;
+    font-size: 14px;
+}
+
+div.right ul {
+    margin-left: 20px;
+}
+
+button.styleButton {
+    border: 4px solid rgba(28, 28, 28, 0.7);
+    padding: 0px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: fixed; bottom: 20px; right: 20px;
+    margin: 0px;
+    border-radius: 50%;
+    background-image: url("assets/gearIcon.png");
+    background-size: cover;
+    background-position: center;
+}
+
+button.styleButton:hover {
+    border: 4px solid rgba(28, 28, 28, 0.9);
+    background-color: rgba(61, 61, 61, 0.3);
+}

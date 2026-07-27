@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Denys R. Slater</title>
+  <link id="style"rel="stylesheet" href="anm.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav class="navBar">
+    <button class="homeButton" onclick="goTo('index.html')">Home</button>
+    <button class="navButton" onclick="goTo('portfolio.html')">My Work</button>
+    <button class="navButton" onclick="goTo('qualification.html')">Qualifications</button>
+    <button class="navButton" onclick="goTo('services.html')">Services</button>
+    <button class="navButton" onclick="goTo('genai.html')">Generative AI</button>
+  </nav>
+  <br>
+
+  <script>
+    function goTo(page) {
+      window.location.href = page;
+    }
+  </script>
+
+  <div class="left">
+    <header>AwShucks</header>
+    <img src="assets/awShucks.jpg" style="margin-top: 5px; width: 85%">
+
+    <header>Grace Bridge</header>
+    <img src="assets/graceBridge.jpg" style="margin-top: 5px; width: 70%">
+
+    <p>
+      <a class="linkBig" href="https://awshucksdallas.com/aw-shucks-frisco/">
+        AwShucks</a>
+
+      <a class="sepBig">  |  </a>
+
+      <a class="linkBig" href="https://www.gracebridge.us/">
+        Grace Bridge</a>
+    </p>
+
+  </div>
+
+  <div class="right">
+    <button onclick="changeStyle()" class="styleButton" title="Change Styles"></button>
+
+    <script>
+      function changeStyle() {
+        const link = document.getElementById("style");
+        if (link.getAttribute("href") === "anm.css") {
+          link.setAttribute("href", "fall.css");
+        } else {
+          link.setAttribute("href", "anm.css");
+        }
+      }
+    </script>
+
+    <header class="aboutMe" style="margin-top: 10px;">AwShucks Oyster Bar:</header>
+    <p>
+      When I was in my senior year of high school, I worked at an AwShucks Oyster Bar and Grill location in Frisco as well. 
+      A large portion of the restaurant’s demographic spoke only Spanish. Much of my contribution to the team was in taking 
+      orders for these people and communicating with the kitchen staff that also only spoke Spanish. For new hires, I helped 
+      teach those willing to learn the menu in spanish which greatly improved the company's workflow as it enabled more people 
+      to take orders greatly improving wait times. 
+    </p>
+
+    <header class="aboutMe" style="margin-top: 220px;">Grace Bridge Resale:</header>
+    <p>
+      In the past I have volunteered at Grace Bridge Resale in Frisco, Texas for a few weeks. At Grace Bridge Resale 
+      I hung new clothes up and organized the clothing racks, electronics and home decor into more visually appealing 
+      configurations. I also helped process donations and sort them into their respective categories. The work I did at 
+      Grace Bridge Resale helped me further develop a strong sense of duty unto others.
+    </p>
+  </div>
+
+</body>
+</html>

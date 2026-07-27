@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Denys R. Slater</title>
+  <link id="style" rel="stylesheet" href="anm.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav class="navBar">
+    <button class="homeButton" onclick="goTo('index.html')">Home</button>
+    <button class="navButton" onclick="goTo('portfolio.html')">My Work</button>
+    <button class="navButton" onclick="goTo('qualification.html')">Qualifications</button>
+    <button class="navButton" onclick="goTo('services.html')">Services</button>
+    <button class="navButton" onclick="goTo('genai.html')">Generative AI</button>
+  </nav>
+  <br>
+
+  <script>
+    function goTo(page) {
+      window.location.href = page;
+    }
+  </script>
+
+  <div class="left">
+    <header>Reddit Bot</header>
+    <img src="assets/redditPhoto.JPG" style="margin-top: 5px;">
+
+    <header>Blackjack</header>
+    <img src="assets/bjPhoto.JPG" style="margin-top: 5px;">
+
+    <p>
+      <a class="linkBig" href="https://www.linkedin.com/in/denysrslater">
+      LinkedIn</a>
+
+      <a class="sepBig">  |  </a>
+
+      <a class="linkBig" href="https://github.com/dster-d3">
+      GitHub</a>
+
+      <a class="sepBig">  |  </a>
+
+      <a class="linkBig" href="https://sites.google.com/tamu.edu/slater-portfolio/home">
+        Google Sites</a>
+
+      <a class="sepBig">  |  </a>
+
+      <a class="linkBig" href="https://www.tiktok.com/@robert.smith1015">
+        TikTok</a>
+    </p>
+
+  </div>
+
+  <div class="right">
+    <button onclick="changeStyle()" class="styleButton" title="Change Styles"></button>
+
+    <script>
+      function changeStyle() {
+        const link = document.getElementById("style");
+        if (link.getAttribute("href") === "anm.css") {
+          link.setAttribute("href", "fall.css");
+        } else {
+          link.setAttribute("href", "anm.css");
+        }
+      }
+    </script>
+
+    <header class="aboutMe" style="margin-top: 0px;">Reddit Bot Overview:</header>
+    <p>
+      I set out to create a bot that when given a link to a Reddit story page and some 
+      b-roll it would scrape the page for the story text and title, generate audio and subtitles and combine 
+      the audio and subtitles with a provided background video. After I was satisfied with my final product I 
+      uploaded Reddit story videos on TikTok as a proof of concept. Though they didn’t get many views, the 
+      entire process proved the capabilities that computer science could provide and secured my loyalty to 
+      the discipline. 
+    </p>
+    
+    <header class="aboutMe" style="margin-top: 90px;">Blackjack Overview:</header>
+    <p>
+      During my freshman year at Texas A&M in their general engineering program I was introduced to python for 
+      the first time and slowly began to fall in love with coding. Towards the end of the semester, I worked on 
+      creating my own game and really enjoyed the process of getting better at learning new libraries and reading 
+      documentation. I enjoyed it so much that over winter break I continued to work on adding graphics as well
+      as a current card count tracker
+    </p>
+
+  </div>
+
+</body>
+</html>

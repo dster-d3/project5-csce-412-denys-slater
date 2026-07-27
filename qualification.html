@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Denys R. Slater</title>
+  <link id="style" rel="stylesheet" href="anm.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav class="navBar">
+    <button class="homeButton" onclick="goTo('index.html')">Home</button>
+    <button class="navButton" onclick="goTo('portfolio.html')">My Work</button>
+    <button class="navButton" onclick="goTo('qualification.html')">Qualifications</button>
+    <button class="navButton" onclick="goTo('services.html')">Services</button>
+    <button class="navButton" onclick="goTo('genai.html')">Generative AI</button>
+  </nav>
+  <br>
+
+  <script>
+    function goTo(page) {
+      window.location.href = page;
+    }
+  </script>
+
+  <div class="left">
+    <header>Resume:</header>
+    <a class="pdf" href="assets/Denys_Slater_Resume.pdf" download>
+      <iframe src="assets/Slater, Denys - Resume.pdf" style="width:500px; height:600px; margin-top: 5px;" title="Resume PDF"></iframe>
+    </a>
+  </div>
+  
+  <div class="right">
+    <button onclick="changeStyle()" class="styleButton" title="Change Styles"></button>
+
+    <script>
+      function changeStyle() {
+        const link = document.getElementById("style");
+        if (link.getAttribute("href") === "anm.css") {
+          link.setAttribute("href", "fall.css");
+        } else {
+          link.setAttribute("href", "anm.css");
+        }
+      }
+    </script>
+
+    <header class="aboutMe" style="margin-top: 0px;">Skills:</header>
+    <p>
+      Additionally, I’m confident in my ability to code in C++, Java, HTML, CSS, JavaScript, Scheme, and Haskell. 
+      I’ve coded various projects in all of these languages and have become quick to learn documentation. I’ve also 
+      familiarized myself with package managers like Anaconda and become proficient in tools like VScode, Jupyter Notebooks, 
+      and PostgreSQL. 
+    </p>
+    
+    <header class="aboutMe" style="margin-top: 90px;">Interests:</header>
+    <p>
+      My main interest, though, is on how data analysis, machine learning and algorithms can provide financial risk 
+      management, high frequency trading, and trend prediction capabilities. At my internship I managed an automatic photo 
+      background-cropper that pulls source photos from a database.
+    </p>
+
+  </div>
+
+</body>
+</html>

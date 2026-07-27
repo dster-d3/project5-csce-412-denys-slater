@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Denys R. Slater</title>
+  <link id="style" rel="stylesheet" href="anm.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav class="navBar">
+    <button class="homeButton" onclick="goTo('index.html')">Home</button>
+    <button class="navButton" onclick="goTo('portfolio.html')">My Work</button>
+    <button class="navButton" onclick="goTo('qualification.html')">Qualifications</button>
+    <button class="navButton" onclick="goTo('services.html')">Services</button>
+    <button class="navButton" onclick="goTo('genai.html')">Generative AI</button>
+  </nav>
+  <br>
+
+  <script>
+    function goTo(page) {
+      window.location.href = page;
+    }
+  </script>
+
+  <div class="left">
+    <header>Denys R. Slater</header>
+
+    <p>
+      <a class="link" href="https://catalog.tamu.edu/undergraduate/engineering/computer-science/bs/#programrequirementstext">
+        Computer Science Undergraduate at Texas A&M</a>
+      <a class="sep">  |  </a>
+
+      <a class="link" href="https://www.linkedin.com/in/denysrslater">
+        LinkedIn</a>
+      <a class="sep">  |  </a>
+
+      <a class="link" href="mailto:denys.slater@example.com">
+        Email Me</a>
+    </p>
+    
+    <img src="assets/headShot.jpg">
+
+  </div>
+
+  <div class="right">
+    <button onclick="changeStyle()" class="styleButton" title="Change Styles"></button>
+
+    <script>
+      function changeStyle() {
+        const link = document.getElementById("style");
+        if (link.getAttribute("href") === "anm.css") {
+          link.setAttribute("href", "fall.css");
+        } else {
+          link.setAttribute("href", "anm.css");
+        }
+      }
+    </script>
+    
+    <header class="aboutMe">About Me:</header>
+
+    <p>
+      Howdy! My name is Denys Slater and I’m an undergraduate computer science student at A&M and aspiring to work in 
+      quantitative finance. I’ve had severe issues with dyslexia in my youth but with the help of my parents and the fine teachers at 
+      <a class="link" href="https://www.shelton.org/">Shelton</a>
+      I can proudly say that I haven’t needed any accommodations since middle school. I’m no stranger to adversity and love
+      to conquer challenging and complex tasks. A lot of my motivation to pursue stem was born from the frustration of feeling incapable 
+      and release I felt when I finally reached a level of mastery over my dyslexia.
+    </p>
+    
+    <p>
+      A large part of my confidence comes from my ability to teach or convey complex concepts to others. This began in my group
+      tutoring for dyslexics where I learned to convey the same concepts differently depending on a person's needs. I love 
+      being able to work with people and reach a common understanding whatever that may be:
+    </p>
+    
+    <ul>
+      <li>A solution to an issue</li>
+      <li>Resolving miscommunication and misunderstandings</li>
+      <li>Orienting towards a new goal or project</li>
+      <li>Communicating details about a project and its construction</li>
+    </ul>
+
+    <p>
+      Though I especially enjoy aiding others in clearing their confusions, I hope to be an asset to those around me in all manners
+      of life so clearing confusion is not something I prioritize over being a good listener and student. In school projects, I’ve
+      been able to help facilitate a positive, friendly, and efficient group environment. It’s been obvious to me from a young age
+      that communication is the most important aspect of any relationship and I constantly employ and improve upon my communication
+      skills. Furthermore, the confidence I have in my ability to convey complex ideas to others extends to my communication skills. 
+      You can only understand what somebody doesn't understand or needs from you by listening closely and you can only convey complex 
+      ideas by tailoring your explanation to the recipient. 
+    </p>
+  </div>
+
+</body>
+
+</html>
