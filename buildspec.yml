@@ -1,0 +1,7 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Creating CloudFront invalidation"
+      - aws cloudfront create-invalidation --distribution-id E3FHICSZQZL6DO --paths "/*"
